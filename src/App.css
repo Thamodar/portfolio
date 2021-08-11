@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+* {
+  margin-top : 0px;
+  font-family: Arial;
+}
+body {
+  background: linear-gradient(-45deg, #336699 100%, #6699ff 30%);
+
+}
+.container {
+  display : flex;
+  flex-direction: row;
+  height:600px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.sidebar {
+  position:relative;
+  display : flex;
+  margin: 50px 20px ;
+  background-color: beige;
+  padding: 50px 20px;
+  width: 400px;
+  border-radius: 20px;
+  border: 4px solid rgb(88, 83, 83);
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height:600px;
 }
 
-.App-link {
-  color: #61dafb;
+.mainbar {
+  margin: 50px 20px ;
+  background-color: beige;
+  padding: 50px 20px;
+  width: 65%;
+  border-radius: 20px;
+  border: 4px solid rgb(88, 83, 83);
+  height: 600px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 800px) {
+  .container{
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+  .sidebar {
+    width: 600px;
   }
+  .mainbar {
+    width: auto;
+  }
+  .about__offered{
+    width: auto !important;
+    height: auto !important;
+    padding-top:0px !important;
+    padding-left:0px !important;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    border-radius: 8px !important;
+    overflow-y: auto !important;
+  }
+}
+
+
+.avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+  margin: 8px;
+}
+
+.fromstart {
+  display: flex;
+  align-items: flex-start;
+}
+
+.mainbar__container {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between ;
+  padding-bottom: 30px;
+  margin-left: 10px;
+}
+
+.mainbar__items {
+  width:  20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between ;
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+.mainbar__active{
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  font: sans-serif;
+  border-bottom: 4px solid #164a7e;
+}
+.mainbar__item {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+
+.mainbar__item:hover {
+  color:#212ff1;
+}
+
+.container__inner {
+  position:relative;
+  width: 100%;
+  height: 90%;
+}
+/* about Component */
+.about__objective{
+  position:relative;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  padding: 13px;
+  margin-bottom: 20px;
+}
+
+.about__offered{
+  position:relative;
+  width: auto;
+  height: 75%;
+  padding-top:10px;
+  padding-left:20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  background-color: #b2b6b9;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.about__offer{
+  position:relative;
+  width: 50%;
+  height: 75%;
+  display:flex;
+ 
+  margin-left: 100px;
+  padding-left:20px;
+  flex-direction: column;
+
+}
+
+.about__offer__each{
+  position:relative;
+  width:100%;
+  height:80%;
+  line-height: 2;
+}
+
+.about__icons {
+  width: 50px;
+  height: 50px;
+  margin-left: 200px;
+}
+
+.about__fieldname{
+  font-size: 1.2rem;
+  padding-left:130px;
+  margin-bottom: 0px;
+}
+
+.about__fielddesc{
+  font-size: 1rem;
+  margin-bottom: 0px;
+
+  line-height: 1.5;
+  margin-left: 70px;
+}
+
+.container__resume {
+  display: flex !important;
+  width: 100% !important;
+  height: 100% !important;
+
+}
+
+.resume__data {
+  flex:50%;
+  height: auto;
+  padding: 10px;
+}
+
+/* projects styles */
+.projectCard_container{
+  display: flex;
+  width:auto;
+  height:500px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  padding-bottom: 30px;
+  padding-left:50px;
+}
+.projectCard {
+  flex: 1;
+  width:400px;
+  height:300px;
+}
+
+.projectCard_image {
+  width:300px;
+  height:200px;
+  border:2px solid #336699;
+  border-radius: 20px;
+}
+
+.projectCard_Title{
+  padding:8px 70px;
+}
+
+.projectCard_Icon {
+  padding-right:10px;
 }
