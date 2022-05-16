@@ -5,7 +5,7 @@ import resumeData from './data/resume_data';
 const Resume = () => {
 
     return (
-        <div classname="container__inner">
+        <div classname="container__inner__resume">
             <div classname="container__resume" style={{  padding: '10px',weight:'100%'}}>
                 {
                     resumeData.map(data => {

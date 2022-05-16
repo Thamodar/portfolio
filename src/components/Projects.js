@@ -6,12 +6,18 @@ class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            projectdata: projectdata
+            projectdata,
+            pData:projectdata
         }
     }
 
-    onClick = () => {
-        console.log("helo");
+    onClick = (e) => {
+
+         console.log(e.target.innerText);
+        this.setState({
+            pData:this.state.projectdata.filter((project) => project.category.includes(e.target.innerText))
+            },() => console.log(this.state.pData));
+    
     }
 
     render() {
@@ -19,13 +25,12 @@ class Projects extends Component {
         return (
             <>
                 <div className="projectCard_Navigator">
-                    <div onClick={this.onClick}>ALL</div>
-                    <div onclick={this.onClick}>React Js</div>
+                    <div className="projectCard_Navigator__item" onClick={this.onClick} name="ALL">ALL</div>
+                    <div className="projectCard_Navigator__item" onClick={this.onClick} name="React">React</div>
                 </div>
                 <div className="projectCard_container">
-
                     {
-                        this.state.projectdata.map((project) =>
+                        this.state.pData.map((project) =>
                             <ProjectCard
                                 key={project.name}
                                 project={project}

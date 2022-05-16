@@ -10,28 +10,27 @@ class SideBar extends Component {
 
     render() {
       return (
-          <>
             <div className="sidebar-items">
-                <div>
+                <div className="profile-detail">
                     <img src={ProfileImage} className="avatar profileimage"/>
-                    <p>Thamodar  
+                    <p className="para">Thamodar  
                         <span>
                             T
                         </span>
                     </p>
-                    <p className="tag-name">
+                    <p className="tag-name para">
                         Frontend Developer
                     </p>
                 </div>
 
-                <div>
+                <div className="download-resume">
                     <AiFillFileText className="icons"/>
-                    <p>
+                    <p className="para">
                     Download Resume
                     </p>
                 </div>
 
-                <div>
+                <div className="social-media">
                     <img src={Facebook} className="icons facebook"/>
                     <img src={instagram} className="icons instagram"/>
                 </div>
@@ -42,10 +41,10 @@ class SideBar extends Component {
                         <img src={git} className="icons location"/>
                           Github
                     </div>
-                    <p className="email">
+                    <p className="email para">
                         thamodar96@gmail.com
                     </p>
-                    <p className="phone">
+                    <p className="phone para">
                         8144812628
                     </p>
                 </div>
@@ -54,7 +53,6 @@ class SideBar extends Component {
                 </button>
 
             </div>
-          </>
       );
     }
 }

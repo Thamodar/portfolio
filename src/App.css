@@ -16,8 +16,7 @@ body {
   position:relative;
   display : flex;
   margin: 50px 20px ;
-  background-color: beige;
-  padding: 50px 20px;
+  background-color: lightblue;
   width: 400px;
   border-radius: 20px;
   border: 4px solid rgb(88, 83, 83);
@@ -26,9 +25,27 @@ body {
   height:600px;
 }
 
+.sidebar-items {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileimage {
+  border: 2px solid;
+}
+
+.para {
+  font-weight: bold;
+}
+
+
 .mainbar {
   margin: 50px 20px ;
-  background-color: beige;
+  background-color: lightblue;
   padding: 50px 20px;
   width: 65%;
   border-radius: 20px;
@@ -40,9 +57,13 @@ body {
   .container{
     flex-wrap: wrap;
   }
+ /* Sidebar styles */
   .sidebar {
     width: 600px;
   }
+
+  /* Mainbar styles*/
+
   .mainbar {
     width: auto;
   }
@@ -103,6 +124,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: black;
+  margin-left: 7px;
 }
 
 
@@ -114,6 +136,13 @@ body {
   position:relative;
   width: 100%;
   height: 90%;
+}
+
+.container__inner__resume {
+  position:static !important;
+  width: 100% !important;
+  height: 600px !important;
+  overflow-y: scroll !important;
 }
 /* about Component */
 .about__objective{
@@ -176,11 +205,13 @@ body {
   margin-left: 70px;
 }
 
+
 .container__resume {
+  position: absolute;
   display: flex !important;
   width: 100% !important;
-  height: 100% !important;
-
+  height: 600px;
+  
 }
 
 .resume__data {
@@ -198,6 +229,8 @@ body {
   overflow-y: auto;
   padding-bottom: 30px;
   padding-left:50px;
+  margin-top: 20px;
+  transition-timing-function: linear;
 }
 .projectCard {
   flex: 1;
@@ -219,3 +252,23 @@ body {
 .projectCard_Icon {
   padding-right:10px;
 }
+
+.projectCard_Navigator {
+  margin-left: 20px;
+  display:flex;
+  gap:12px;
+  
+}
+
+.projectCard_Navigator__item {
+  font-weight: bold;
+  padding:10px;
+  background-color: #164a7e;
+  border-radius: 10px;
+}
+
+.projectCard_Navigator__item:hover {  
+  cursor: default;
+  background: lightslategrey;
+}
+
