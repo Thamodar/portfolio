@@ -1,59 +1,59 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import Facebook from '../assets/icons/facebook.png';
 import git from '../assets/icons/git.png';
 import instagram from '../assets/icons/instagram.png';
 import location from '../assets/icons/location.png';
 import ProfileImage from '../assets/projectimages/profileimage.jpg';
-import {AiFillFileText} from 'react-icons/ai';
+import resumeDocument from '../assets/docs/resumeDoc.docx'
+import { AiFillFileText, AiOutlineGithub } from 'react-icons/ai';
+import { GrLocation  } from 'react-icons/gr';
 
 class SideBar extends Component {
 
     render() {
-      return (
+        return (
             <div className="sidebar-items">
-                <div className="profile-detail">
-                    <img src={ProfileImage} className="avatar profileimage"/>
-                    <p className="para">Thamodar  
-                        <span>
-                            T
-                        </span>
-                    </p>
-                    <p className="tag-name para">
-                        Frontend Developer
-                    </p>
-                </div>
+                <img src={ProfileImage} className="avatar profileimage" />
+                <p className="profile-name">Thamodar T </p>
+                <p className="tag-name">
+                    Frontend Developer
+                </p>
 
-                <div className="download-resume">
-                    <AiFillFileText className="icons"/>
-                    <p className="para">
-                    Download Resume
+                <a href={resumeDocument} target="_blank" className="flexbox download-resume">
+                    <AiFillFileText className="icons" />
+                    <p className="sb-font-weight download-resume-content">
+                        Download Resume
                     </p>
-                </div>
+                </a>
 
-                <div className="social-media">
-                    <img src={Facebook} className="icons facebook"/>
-                    <img src={instagram} className="icons instagram"/>
-                </div>
-                <div className="personal-detail">
-                    <img src={location} className="icons location"/>
-                       Tamilnadu , India
-                    <div className="fromstart">
-                        <img src={git} className="icons location"/>
-                          Github
+                {/* <div className="social-media">
+                    <img src={Facebook} className="icons facebook" />
+                    <img src={instagram} className="icons instagram" />
+                </div> */}
+                <div className="flexbox personal-detail">
+                    <div className="flexbox">
+                    <GrLocation className="icons location" />
+                    Tamilnadu , India
                     </div>
-                    <p className="email para">
+                    <div className="fromstart">
+                    <div className="flexbox padding-border">
+                        <AiOutlineGithub className="icons location" />
+                        Github
+                        </div>
+                    </div>
+                    <a href="mailto:thamodar96@gmail.com" className="sb-email padding-border para">
                         thamodar96@gmail.com
-                    </p>
+                    </a>
                     <p className="phone para">
                         8144812628
                     </p>
                 </div>
-                <button>
+                {/* <button className="sb-email-btn">
                     Email Me
-                </button>
+                </button> */}
 
             </div>
-      );
+        );
     }
 }
 

@@ -1,3 +1,5 @@
+
+
 * {
   margin-top : 0px;
   font-family: Arial;
@@ -6,10 +8,14 @@ body {
   background: linear-gradient(-45deg, #336699 100%, #6699ff 30%);
 
 }
+a {
+  color:black;
+  text-decoration: none;
+}
 .container {
   display : flex;
   flex-direction: row;
-  height:600px;
+
 }
 
 .sidebar {
@@ -17,17 +23,16 @@ body {
   display : flex;
   margin: 50px 20px ;
   background-color: lightblue;
-  width: 400px;
+  width: 30%;
   border-radius: 20px;
   border: 4px solid rgb(88, 83, 83);
   align-items: center;
   justify-content: center;
-  height:600px;
+  font-family: 'Josefin Sans', cursive;
 }
 
 .sidebar-items {
   width: 100% !important;
-  height: 100% !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,11 +40,80 @@ body {
 }
 
 .profileimage {
-  border: 2px solid;
+  margin:15px 0px;
+  border: 4px solid black;
+  border-radius: 8px;
 }
 
-.para {
+.profile-name {
+  margin:10px 0px;
+  margin-bottom: 20px;
   font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.tag-name {
+  font-size:1.2rem;
+  font-weight: bold;
+  padding:20px 60px;
+  border-radius: 8px;
+  background-color: lightslategray;
+}
+
+.download-resume {
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  margin:10px 0px;
+}
+
+.flexbox {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.personal-detail {
+  flex-direction: column;
+  gap:12px;
+  font-weight: bold;
+  background-color: lightslategray;
+  padding: 20px 50px;
+  margin:10px 0px;
+  border-radius: 8px;
+}
+
+.download-resume-content:hover {
+  color: #212ff1;
+}
+
+.download-resume-content {
+  margin-bottom: 0px;
+}
+
+.sb-font-weight {
+  font-weight: bold;
+}
+
+.padding-border {
+  padding:0px 8px;
+  border-radius: 8px;
+}
+
+.padding-border:hover {
+  cursor:pointer;
+  background-color: #b2b6b9;
+}
+
+.sb-email {
+  padding:10px 8px;
+  margin:10px 0px;
+}
+
+.sb-email-btn {
+  margin:20px;
+  border-radius: 6px;
+  background-color: lightslategrey;
 }
 
 
@@ -47,39 +121,14 @@ body {
   margin: 50px 20px ;
   background-color: lightblue;
   padding: 50px 20px;
-  width: 65%;
+  width: 50%;
   border-radius: 20px;
   border: 4px solid rgb(88, 83, 83);
-  height: 600px;
-}
-
-@media only screen and (max-width: 800px) {
-  .container{
-    flex-wrap: wrap;
-  }
- /* Sidebar styles */
-  .sidebar {
-    width: 600px;
-  }
-
-  /* Mainbar styles*/
-
-  .mainbar {
-    width: auto;
-  }
-  .about__offered{
-    width: auto !important;
-    height: auto !important;
-    padding-top:0px !important;
-    padding-left:0px !important;
-    margin-top: 0px !important;
-    margin-left: 0px !important;
-    border-radius: 8px !important;
-    overflow-y: auto !important;
-  }
 }
 
 
+
+/* MainBar Styles */
 .avatar {
   width: 100px;
   height: 100px;
@@ -270,5 +319,30 @@ body {
 .projectCard_Navigator__item:hover {  
   cursor: default;
   background: lightslategrey;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container{
+    flex-wrap: wrap;
+  }
+ /* Sidebar styles */
+  .sidebar {
+    width: 100%;
+  }
+
+  /* Mainbar styles*/
+
+  .mainbar {
+    width: auto;
+  }
+  .about__offered{
+    width: auto !important;
+    height: auto !important;
+    padding-top:0px !important;
+    padding-left:0px !important;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    border-radius: 8px !important;
+  }
 }
 
