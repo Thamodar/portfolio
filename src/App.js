@@ -4,7 +4,7 @@ import MainBar from './components/MainBar';
 import About from './components/About';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
-import { BrowserRouter as Router, Switch, Link, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 
 
 function App() {

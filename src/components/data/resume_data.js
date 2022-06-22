@@ -9,7 +9,7 @@ const resume_Data = [
                     {
                         "index": "11",
                         "subname": "Senior Frontend Developer : Nov 2021 - Current",
-                        "description": "Developing Web Pages by ReactJs with Redux and Functional tests"
+                        "description": "Developing Web Pages by ReactJs with Redux and functional tests"
                     }
                 ]
             },
@@ -24,7 +24,7 @@ const resume_Data = [
                     {
                         "index": "12",
                         "subname": "Quality Assurance : Sep 2018 - nov 2019",
-                        "description": "Involved in Saas and Paas Testing , Preparing TestCases ,Reporting Bugs, Writing Automation Scripts"
+                        "description": "Involved in Web and API Testing , Preparing TestCases ,Reporting Bugs, Writing Automation Scripts"
                     }
                 ]
             },
@@ -72,39 +72,13 @@ const resume_Data = [
             {
                 "value": "C++",
                 "level": "80"
+            },
+            {
+                "value": "Git",
+                "level": "80"
             }
         ]
     },
-    {
-        "renderType": "bar",
-        "heading": "Language & Framework",
-        "list": [
-            {
-                "value": "Javascript",
-                "level": "80"
-            },
-            {
-                "value": "React",
-                "level": "80"
-            },
-            {
-                "value": "HTML && CSS",
-                "level": "80"
-            },
-            {
-                "value": "Mysql",
-                "level": "50"
-            },
-            {
-                "value": "C",
-                "level": "90"
-            },
-            {
-                "value": "C++",
-                "level": "80"
-            }
-        ]
-    }
 ]
 
 export default resume_Data;

@@ -1,23 +1,23 @@
 import weatherImage from '../../assets/projectimages/weatherAppImg.jpg';
 import youtubeClone from '../../assets/projectimages/youtubeClone.jpg';
-import {AiFillGithub} from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai'
 
 const projects_data = [
     {
         name: "Weather App",
-        image: weatherImage,
-        github_link: "https://github.com/Thamodar/weather-app", 
-        deployment_link: "https://covid-19-tracker-by-sumit.web.app/",
-        category:["ALL","React"],
-        Icon:AiFillGithub
+        imagee: weatherImage,
+        github_link: "https://github.com/Thamodar/weather-app",
+        deployment_link: "https://thamo-weather-app.netlify.app/",
+        category: ["ALL", "React"],
+        Icon: AiFillGithub
     },
     {
         name: "Youtube Player Clone",
         image: youtubeClone,
         github_link: "https://github.com/Thamodar/youtube-clone-app",
         deployment_link: "https://covid-19-tracker-by-sumit.web.app/",
-        category:["ALL","React"],
-        Icon:AiFillGithub
+        category: ["ALL", "React"],
+        Icon: AiFillGithub
     },
     // {
     //     name: "COVID 19 tracker2",

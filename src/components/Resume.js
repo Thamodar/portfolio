@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Bar from './Bar';
 import resumeData from './data/resume_data';
 
 const Resume = () => {
 
     const styles = {
-        padding: '10px', 
-        overflowY: 'scroll', 
-        height: '700px', 
-        backgroundColor: 'lightslategrey', 
+        padding: '10px',
+        overflowY: 'scroll',
+        height: '700px',
+        backgroundColor: 'lightslategrey',
         borderRadius: '8px',
-        scrollbarColor:'inherit'
+        scrollbarColor: 'inherit'
     }
 
     return (
@@ -22,22 +22,22 @@ const Resume = () => {
                             <h1>{data.heading}</h1>
                             {
                                 data.Subheadings.map((subheading) => {
-                                        return(
+                                    return (
                                         <>
-                                        <h2>{subheading.name}</h2>
-                                        {
-                                            subheading.list.map(lt => {
-                                                return <>
-                                                    <h3>{lt.subname}</h3>
-                                                    <p style={{paddingLeft:'20px'}}>{lt.description}</p>
-                                                </>
+                                            <h2>{subheading.name}</h2>
+                                            {
+                                                subheading.list.map(lt => {
+                                                    return <>
+                                                        <h3>{lt.subname}</h3>
+                                                        <p style={{ paddingLeft: '20px' }}>{lt.description}</p>
+                                                    </>
                                                 }
-                                            )
-                                        }
+                                                )
+                                            }
                                         </>
                                     )
                                 }
-                                
+
 
                                 )
                             }

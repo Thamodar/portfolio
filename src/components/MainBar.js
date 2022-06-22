@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 
 const MainBar = () => {
@@ -24,17 +24,17 @@ const MainBar = () => {
       <div className="mainbar__items">
         {active !== 'ABOUT' &&
           <Link to="/" className="mainbar__item">
-            <div  onClick={() => setActive('About')}>ABOUT</div>
+            <div onClick={() => setActive('About')}>ABOUT</div>
           </Link>
         }
         {active !== 'RESUME' &&
           <Link to="/resume" className="mainbar__item">
-            <div  onClick={() => setActive('Resume')}>RESUME</div>
+            <div onClick={() => setActive('Resume')}>RESUME</div>
           </Link>
         }
         {active !== 'PROJECTS' &&
           <Link to="/projects" className="mainbar__item">
-            <div  onClick={() => setActive('Projects')} style={{marginRight:'5px'}}>PROJECTS</div>
+            <div onClick={() => setActive('Projects')} style={{ marginRight: '5px' }}>PROJECTS</div>
           </Link>}
 
       </div>
