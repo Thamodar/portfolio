@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import Facebook from '../assets/icons/facebook.png';
-import git from '../assets/icons/git.png';
-import instagram from '../assets/icons/instagram.png';
-import location from '../assets/icons/location.png';
-import ProfileImage from '../assets/projectimages/profileimage.jpg';
+import ProfileImage from '../assets/projectimages/profileimageone.jpg';
 import resumeDocument from '../assets/docs/resumeDoc.docx'
 import { AiFillFileText, AiOutlineGithub } from 'react-icons/ai';
 import { GrLocation  } from 'react-icons/gr';
@@ -36,10 +32,10 @@ class SideBar extends Component {
                     Tamilnadu , India
                     </div>
                     <div className="fromstart">
-                    <div className="flexbox padding-border">
+                       <a href="https://github.com/Thamodar" alt="Github" target="_blank" className="flexbox padding-border">
                         <AiOutlineGithub className="icons location" />
                         Github
-                        </div>
+                        </a>
                     </div>
                     <a href="mailto:thamodar96@gmail.com" className="sb-email padding-border para">
                         thamodar96@gmail.com

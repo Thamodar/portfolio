@@ -15,7 +15,7 @@ import {  CgPerformance} from "react-icons/cg";
        {
         key: 2,
         icon: CgPerformance,
-        fieldName: 'Software Testing',
+        fieldName: 'Quality Assurance',
         fieldDesc:'Able to Write TestCases, Can able to perform API Testing , Sass Testing through Manual and Automation'
        }
 

@@ -2,26 +2,39 @@ const resume_Data = [
     {
         "renderType": "detail",
         "heading": "Experience",
-        "Subheadings": {
-            "name": "Solartis Technolgy Services",
-            "list": [
-                {
-                    "index": "11",
-                    "subname": "Frontend Developer : Jan 2020 - Current",
-                    "description": "Developing Web Pages by ReactJs with Redux and Material UI"
-                },
-                {
-                    "index": "12",
-                    "subname": "Quality Assurance : Sep 2018 - Dec 2019",
-                    "description": "Involved in Saas and Paas Testing , Preparing TestCases ,Reporting Bugs, Writing Automation Scripts"
-                }
-            ]
-        }
+        "Subheadings": [
+            {
+                "name": "Aditi Consulting - Paypal",
+                "list": [
+                    {
+                        "index": "11",
+                        "subname": "Senior Frontend Developer : Nov 2021 - Current",
+                        "description": "Developing Web Pages by ReactJs with Redux and Functional tests"
+                    }
+                ]
+            },
+            {
+                "name": "Solartis Technolgy Services",
+                "list": [
+                    {
+                        "index": "11",
+                        "subname": "Frontend Developer : Dec 2020 - Oct 2021",
+                        "description": "Developing Web Pages by ReactJs with Redux and Material UI"
+                    },
+                    {
+                        "index": "12",
+                        "subname": "Quality Assurance : Sep 2018 - nov 2019",
+                        "description": "Involved in Saas and Paas Testing , Preparing TestCases ,Reporting Bugs, Writing Automation Scripts"
+                    }
+                ]
+            },
+            
+        ]
     },
     {
         "renderType": "detail",
         "heading": "Education",
-        "Subheadings": {
+        "Subheadings": [{
             "name": "B.Tech",
             "list": [
                 {
@@ -30,7 +43,7 @@ const resume_Data = [
                     "description": "I have done my college with 6.52 GPA in Velammal College of Engineering and Technolgy Under Anna University"
                 }
             ]
-        }
+        }]
     },
     {
         "renderType": "bar",

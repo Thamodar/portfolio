@@ -9,11 +9,11 @@ const MainBar = () => {
     let currentUrl = window.location.href;
     console.log("currentUrl :", currentUrl);
     if (currentUrl.endsWith("/"))
-      setActive('About');
+      setActive('ABOUT');
     else if (currentUrl.endsWith("/resume"))
-      setActive('Resume');
+      setActive('RESUME');
     else if (currentUrl.endsWith("/projects"))
-      setActive('Projects');
+      setActive('PROJECTS');
   }, [active])
 
   return (
@@ -22,19 +22,19 @@ const MainBar = () => {
         {active}
       </div>
       <div className="mainbar__items">
-        {active !== 'About' &&
+        {active !== 'ABOUT' &&
           <Link to="/" className="mainbar__item">
-            <div  onClick={() => setActive('About')}>About</div>
+            <div  onClick={() => setActive('About')}>ABOUT</div>
           </Link>
         }
-        {active !== 'Resume' &&
+        {active !== 'RESUME' &&
           <Link to="/resume" className="mainbar__item">
-            <div  onClick={() => setActive('Resume')}>Resume</div>
+            <div  onClick={() => setActive('Resume')}>RESUME</div>
           </Link>
         }
-        {active !== 'Projects' &&
+        {active !== 'PROJECTS' &&
           <Link to="/projects" className="mainbar__item">
-            <div  onClick={() => setActive('Projects')}>Projects</div>
+            <div  onClick={() => setActive('Projects')} style={{marginRight:'5px'}}>PROJECTS</div>
           </Link>}
 
       </div>
