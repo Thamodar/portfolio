@@ -13,7 +13,7 @@ const projects_data = [
     },
     {
         name: "Youtube Player Clone",
-        image: youtubeClone,
+        imagee: youtubeClone,
         github_link: "https://github.com/Thamodar/youtube-clone-app",
         deployment_link: "https://thamo-youtube-clone.netlify.app/",
         category: ["ALL", "React"],
