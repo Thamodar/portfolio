@@ -15,7 +15,7 @@ const projects_data = [
         name: "Youtube Player Clone",
         image: youtubeClone,
         github_link: "https://github.com/Thamodar/youtube-clone-app",
-        deployment_link: "https://covid-19-tracker-by-sumit.web.app/",
+        deployment_link: "https://thamo-youtube-clone.netlify.app/",
         category: ["ALL", "React"],
         Icon: AiFillGithub
     },
