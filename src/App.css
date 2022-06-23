@@ -357,8 +357,12 @@ a {
   }
 }
 
-@media(hover: hover) and (pointer: fine) {
-  nav a:hover {
-    background: yellow;
+@media only screen and (max-width: 400px) {
+  .mainbar {
+    width:440px !important;
+  }
+
+  .sidebar {
+    width:440px !important;
   }
 }
